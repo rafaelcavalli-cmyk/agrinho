@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset e Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f2;
+        }
+
+        /* Header */
+        header {
+            background-color: #2d5a27;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a8d5ba;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h3 {
+            color: #2d5a27;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Grid de Pilares */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 5px solid #5d8233;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h4 {
+            color: #5d8233;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1b331a;
+            color: #a8d5ba;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #8db600;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #6d8c00;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro<span>Sustentável</span></h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Compromisso</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Agro Forte, Futuro Sustentável</h2>
+        <p>Produzir com eficiência para alimentar o mundo, preservando os recursos para as próximas gerações.</p>
+        <a href="#" class="cta-button">Conheça Nossas Práticas</a>
+    </section>
+
+    <div class="container">
+        <section class="intro">
+            <h3>O Equilíbrio Necessário</h3>
+            <p>O agronegócio moderno não escolhe entre produção e natureza. Ele entende que a biodiversidade e a saúde do solo são os maiores ativos do produtor rural.</p>
+        </section>
+
+        <section class="pillars">
+            <div class="card">
+                <h4>Tecnologia de Precisão</h4>
+                <p>Otimização do uso de insumos, redução de desperdícios e monitoramento via satélite para garantir que cada hectare produza seu máximo com o mínimo impacto.</p>
+            </div>
+            <div class="card">
+                <h4>Manejo Regenerativo</h4>
+                <p>Práticas como o plantio direto e a integração lavoura-pecuária-floresta que recuperam o solo e sequestram carbono da atmosfera.</p>
+            </div>
+            <div class="card">
+                <h4>Gestão Hídrica</h4>
+                <p>Sistemas inteligentes de irrigação e proteção de nascentes, garantindo que a água continue sendo um recurso abundante e limpo para todos.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Agro Sustentável - Inovação que brota da terra.</p>
+        <p><small>Equilíbrio entre produção e meio ambiente</small></p>
+    </footer>
+
+</body>
+</html>
